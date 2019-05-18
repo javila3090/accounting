@@ -167,8 +167,14 @@
                                 <a href="javascript:" class="dropdown-item">
                                     <i class="feather icon-settings text-muted"></i> &nbsp; Account settings</a>
                                     <div class="dropdown-divider"></div>
-                                    <a href="javascript:" class="dropdown-item">
-                                        <i class="feather icon-power text-danger"></i> &nbsp; Log Out</a>
+                                    <a  href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" class="dropdown-item">
+                                        <i class="feather icon-power text-danger"></i> &nbsp; Log Out</a>                                        
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
                                     </div>
                                 </div>
                             </div>

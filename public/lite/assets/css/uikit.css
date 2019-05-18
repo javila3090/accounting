@@ -1033,6 +1033,7 @@
 }
 
 .fixed-button {
+  display: none;
 	position: fixed;
 	bottom: -50px;
 	right: 30px;
@@ -1046,6 +1047,7 @@
 }
 
 .fixed-button .btn {
+  display: none;
 	margin: 0;
 	background: #79b530;
 	border: none;

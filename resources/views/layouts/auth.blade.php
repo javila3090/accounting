@@ -31,7 +31,8 @@
 
     <!-- Libs -->
     <link rel="stylesheet" href="assets/libs/perfect-scrollbar/perfect-scrollbar.css">
-    <link rel="stylesheet" href="assets/libs/flot/flot.css">
+    <!-- Page -->
+    <link rel="stylesheet" href="assets/css/pages/authentication.css">
     <style type="text/css">
         .fixed-button{
             display: none;
@@ -46,38 +47,10 @@
     </div>
     <!-- [ Preloader ] End -->
 
-    <!-- [ Layout wrapper ] Start -->
-    <div class="layout-wrapper layout-2">
-        <div class="layout-inner">
-            <!-- [ Layout sidenav ] Start -->
-            @include('layouts.sidebar')
-            <!-- [ Layout sidenav ] End -->
-            <!-- [ Layout container ] Start -->
-            <div class="layout-container">
-                <!-- [ Layout navbar ( Header ) ] Start -->
-                @include('partials.header')
-                <!-- [ Layout navbar ( Header ) ] End -->
-
-                <!-- [ Layout content ] Start -->
-                <div class="layout-content">
-
-                    <!-- [ content ] Start -->
-                    @section('content')
-                    @show
-                    <!-- [ content ] End -->
-
-                    <!-- [ Layout footer ] Start -->
-                   @include('partials.footer')
-                    <!-- [ Layout footer ] End -->
-                </div>
-                <!-- [ Layout content ] Start -->
-            </div>
-            <!-- [ Layout container ] End -->
-        </div>
-        <!-- Overlay -->
-        <div class="layout-overlay layout-sidenav-toggle"></div>
-    </div>
-    <!-- [ Layout wrapper] End -->
+    <!-- [ content ] Start -->
+    @section('content')
+    @show    
+    <!-- [ content ] End -->
 
     <!-- Core scripts -->
     <script src="assets/js/pace.js"></script>
@@ -90,16 +63,9 @@
 
     <!-- Libs -->
     <script src="assets/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="assets/libs/eve/eve.js"></script>
-    <script src="assets/libs/flot/flot.js"></script>
-    <script src="assets/libs/flot/curvedLines.js"></script>
-    <script src="assets/libs/chart-am4/core.js"></script>
-    <script src="assets/libs/chart-am4/charts.js"></script>
-    <script src="assets/libs/chart-am4/animated.js"></script>
 
     <!-- Demo -->
     <script src="assets/js/demo.js"></script><script src="assets/js/analytics.js"></script>
-    <script src="assets/js/pages/dashboards_index.js"></script>
 </body>
 
 </html>
