@@ -28,7 +28,7 @@
             <label class="nav-item navbar-text navbar-search-box p-0 active">
                 <i class="feather icon-search navbar-icon align-middle"></i>
                 <span class="navbar-search-input pl-2">
-                    <input type="text" class="form-control navbar-text mx-2" placeholder="Search...">
+                    <input type="text" class="form-control navbar-text mx-2" placeholder="{{ __('messages.search') }}...">
                 </span>
             </label>
         </div>
@@ -38,11 +38,11 @@
                 <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
                     <i class="feather icon-bell navbar-icon align-middle"></i>
                     <span class="badge badge-danger badge-dot indicator"></span>
-                    <span class="d-lg-none align-middle">&nbsp; Notifications</span>
+                    <span class="d-lg-none align-middle">&nbsp; {{ __('messages.notifications') }}</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <div class="bg-primary text-center text-white font-weight-bold p-3">
-                        4 New Notifications
+                        4 {{ __('messages.new_notifications') }}
                     </div>
                     <div class="list-group list-group-flush">
                         <a href="javascript:" class="list-group-item list-group-item-action media d-flex align-items-center">
@@ -90,7 +90,7 @@
                                 </div>
                             </a>
                         </div>
-                        <a href="javascript:" class="d-block text-center text-light small p-2 my-1">Show all notifications</a>
+                        <a href="javascript:" class="d-block text-center text-light small p-2 my-1">{{ __('messages.show_all_notifications') }}</a>
                     </div>
                 </div>
 
@@ -98,11 +98,11 @@
                     <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
                         <i class="feather icon-mail navbar-icon align-middle"></i>
                         <span class="badge badge-success badge-dot indicator"></span>
-                        <span class="d-lg-none align-middle">&nbsp; Messages</span>
+                        <span class="d-lg-none align-middle">&nbsp; {{ __('messages.messages') }}</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <div class="bg-primary text-center text-white font-weight-bold p-3">
-                            4 New Messages
+                            4 {{ __('messages.new_messages') }}
                         </div>
                         <div class="list-group list-group-flush">
                             <a href="javascript:" class="list-group-item list-group-item-action media d-flex align-items-center">
@@ -146,7 +146,7 @@
                             </a>
                         </div>
 
-                        <a href="javascript:" class="d-block text-center text-light small p-2 my-1">Show all messages</a>
+                        <a href="javascript:" class="d-block text-center text-light small p-2 my-1">{{ __('messages.show_all_messages') }}</a>
                     </div>
                 </div>
 
@@ -156,21 +156,21 @@
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                         <span class="d-inline-flex flex-lg-row-reverse align-items-center align-middle">
                             <img src="assets/img/avatars/1.png" alt class="d-block ui-w-30 rounded-circle">
-                            <span class="px-1 mr-lg-2 ml-2 ml-lg-0">Cindy Deitch</span>
+                            <span class="px-1 mr-lg-2 ml-2 ml-lg-0">{{Auth::user()->name}}</span>
                         </span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a href="javascript:" class="dropdown-item">
-                            <i class="feather icon-user text-muted"></i> &nbsp; My profile</a>
+                            <i class="feather icon-user text-muted"></i> &nbsp; {{ __('messages.profile') }}</a>
                             <a href="javascript:" class="dropdown-item">
-                                <i class="feather icon-mail text-muted"></i> &nbsp; Messages</a>
+                                <i class="feather icon-mail text-muted"></i> &nbsp; {{ __('messages.messages') }}</a>
                                 <a href="javascript:" class="dropdown-item">
-                                    <i class="feather icon-settings text-muted"></i> &nbsp; Account settings</a>
+                                    <i class="feather icon-settings text-muted"></i> &nbsp; {{ __('messages.settings') }}</a>
                                     <div class="dropdown-divider"></div>
                                     <a  href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" class="dropdown-item">
-                                        <i class="feather icon-power text-danger"></i> &nbsp; Log Out</a>                                        
+                                        <i class="feather icon-power text-danger"></i> &nbsp; {{ __('messages.logout') }}</a>                                        
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             @csrf
