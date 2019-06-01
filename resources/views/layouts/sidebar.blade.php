@@ -2,7 +2,7 @@
     <!-- Brand demo (see assets/css/demo/demo.css) -->
     <div class="app-brand demo">
         <span class="app-brand-logo demo">
-            <img src="assets/img/logo.png" alt="Brand Logo" class="img-fluid">
+            <img src="{{asset('assets/img/logo.png')}}" alt="Brand Logo" class="img-fluid">
         </span>
         <a href="index.html" class="app-brand-text demo sidenav-text font-weight-normal ml-2">Empire</a>
         <a href="javascript:" class="layout-sidenav-toggle sidenav-link text-large ml-auto">
@@ -106,13 +106,15 @@
             </a>
             <ul class="sidenav-menu">
                 <li class="sidenav-item">
-                    <a href="forms_layouts.html" class="sidenav-link">
-                        <div>Layouts and elements</div>
+                    <a href="#" class="sidenav-link">
+                        <i class="sidenav-icon feather icon-list"></i>
+                        <div>{{ __('messages.list') }}</div>
                     </a>
                 </li>
                 <li class="sidenav-item">
-                    <a href="forms_input-groups.html" class="sidenav-link">
-                        <div>Input groups</div>
+                    <a href="{{url('/users/create')}}" class="sidenav-link">
+                        <i class="sidenav-icon feather icon-plus"></i>
+                        <div>{{ __('messages.new_user') }}</div>
                     </a>
                 </li>
             </ul>

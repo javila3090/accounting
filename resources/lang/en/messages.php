@@ -37,4 +37,8 @@ return [
 	'projects' => 'Projects',
 	'today' => 'Today',
 	'stock' => 'Stock',
+	'opened_tasks' => 'Tasks',
+	'closed_tasks' => 'Closed tasks',
+	'list' => 'List',
+	'new_user' => 'New user',
 ];

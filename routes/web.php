@@ -14,3 +14,4 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home')->middleware('auth');
+Route::get('/users/create', 'UserController@create')->name('user.create')->middleware('auth');

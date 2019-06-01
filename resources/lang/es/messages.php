@@ -37,4 +37,8 @@ return [
 	'projects' => 'Proyectos',
 	'today' => 'Hoy',
 	'stock' => 'Existencia',
+	'opened_tasks' => 'Tareas pendientes',
+	'closed_tasks' => 'Tareas cerradas',
+	'list' => 'Listado',
+	'new_user' => 'Nuevo usuario',
 ];
